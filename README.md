@@ -1,5 +1,9 @@
 # QA Code Test
 
+### Setup
+1. Make a new branch
+2. Go to town
+
 ### Level One
 1. Validate that the home page links navigate to the correct pages
     - Write automated test cases showing that the links go to the correct pages
