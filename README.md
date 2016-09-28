@@ -1,8 +1,9 @@
 # QA Code Test
 
 ### Setup
-1. Make a new branch
-2. Go to town
+1. Clone this repo
+2. Make a new branch
+3. Go to town
 
 ### Level One
 1. Validate that the home page links navigate to the correct pages
