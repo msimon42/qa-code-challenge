@@ -14,8 +14,8 @@
     - Write at least one negative login test
 3. Navigate to a hospital in the town where you grew up
     - Write some automation that returns the name of the hospital and either the zip code or name of the town
-    - Find a Cardiologist in Atka, AK That takes appointments
-    - Write some automation that navigates to the list of physicians. Print the list of physicians
+4. Search for Family Practice Doctors, in Atka, AK
+    - Write some automation that navigates to the list of physicians and prints the list of physicians
 
 ### Level 2
 
