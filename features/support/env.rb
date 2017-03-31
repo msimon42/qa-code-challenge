@@ -5,7 +5,7 @@ require 'capybara-screenshot'
 require 'selenium-webdriver'
 
 SERVER_URL  ||= ENV['SERVER_URL']
-WEB_BROWSER ||= :firefox
+WEB_BROWSER ||= :chrome
 
 # Local development
 Capybara.register_driver WEB_BROWSER do |app|
@@ -25,7 +25,7 @@ end
 
 # HOOKS
 Before do |scenario|
-  visit ENV['SERVER_URL']
+  visit SERVER_URL
 end
 
 After do |scenario|

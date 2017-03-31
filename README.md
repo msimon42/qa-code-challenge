@@ -21,5 +21,5 @@ Homepage='http://www.itriagehealth.com/'
 
 ### Level 2
 
-1. Run the tests on chrome
+1. Run the tests on firefox
 2. Add html reports to the project setup

@@ -12,6 +12,7 @@ group :test do
   gem 'activesupport'
   gem 'capybara'
   gem 'capybara-screenshot'
+  gem 'chromedriver-helper'
   gem 'cucumber'
   gem 'headless'
   gem 'selenium-webdriver'
