@@ -12,4 +12,4 @@ Homepage='https://www.aetna.com/'
     - Write an automated test cases showing that the links go to the correct pages
     - Write an automated test validating that the About us sub-header and Login button appears on each page
 2. Try to login from the home screen
-    - Write an automated to enter a user name and password of your choice and verify the error message 
+    - Write an automated test to enter a user name and password of your choice and verify the error message 
