@@ -4,7 +4,7 @@ require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'pry'
 
-SERVER_URL  ||= "https://www.aetna.com"
+SERVER_URL  ||= ENV['SERVER_URL']
 WEB_BROWSER ||= :chrome
 
 # Local development
