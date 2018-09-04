@@ -1,10 +1,12 @@
 # QA Code Test
 
 ### Setup
-1. Clone this repo
-2. Make a new branch
-3. Make sure you can run the example feature file
-4. Create the tests below in order.  You should be able to create any tests by building on the
+1. Clone this repo.
+2. Create a new branch.
+3. Make sure your Ruby environment is using `ruby 2.3.3p222`.
+4. Run the example feature file:
+    - `bundle exec cucumber features/example.feature`
+5. Now, create the tests below in order.  You should be able to create any tests by building on the
    files that are already set up in the project.
 
 Homepage='https://www.aetna.com/'
