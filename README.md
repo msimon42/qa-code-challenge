@@ -6,14 +6,15 @@
 3. Make sure your Ruby environment is using `ruby 2.3.3p222`.
 4. Run the example feature file:
     - `bundle exec cucumber features/example.feature`
-5. Now, create the tests below in order.  You should be able to create any tests by building on the
+5. Create the tests below in order.  You should be able to create any tests by building on the
    files that are already set up in the project.
 
-Homepage='https://www.aetna.com/'
+Homepage='http://www.myrapname.com/'
 
 ### Tests
-1. Validate that the page "boxes" (Individuals, Employers, Providers, Agents/brokers) navigate to the correct pages
-    - Write an automated test cases showing that the links go to the correct pages
-    - Write an automated test validating that the About us sub-header and Login button appears on each page
-2. Try to login from the home screen
-    - Write an automated test to enter a user name and password of your choice and verify the error message 
+Write an automated test to validate the following:
+    1. the input fields exist
+    2. a negative scenario using the input fields
+    3. input data into the fields
+    4. get a name for male and female 
+    5. only 6 names appear in the list
