@@ -4,7 +4,7 @@ require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'pry'
 
-SERVER_URL  ||= ENV['SERVER_URL']
+SERVER_URL  = 'http://www.myrapname.com/'
 WEB_BROWSER ||= :chrome
 
 # Local development
