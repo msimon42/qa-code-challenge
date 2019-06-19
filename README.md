@@ -1,18 +1,17 @@
 # QA Code Test
 
 ### Setup
-1. Clone this repo.
-2. Create a new branch.
+1. Clone this repo (if using git)
+2. Create a new branch OR Rename your project "qa-interview-yourname"
 3. Make sure your Ruby environment is using `ruby 2.3.3`.
-4. Run the example feature file:
+4. Run the example feature file.  Make sure it runs correctly as you will build upon this test.
     - `bundle exec cucumber features/example.feature`
-5. Create the tests below in order.  You should be able to create any tests by building on the
-   files that are already set up in the project.
+5. Create the tests below in order.  You will create tests by building on the files that are already set up in this project.
 
 Homepage='http://www.myrapname.com/'
 
 ### Tests
-Write an automated test to validate the following:
+Write an automated test to validate each of the following:
     1. the input fields exist
     2. a negative scenario using the input fields
     3. input data into the fields
