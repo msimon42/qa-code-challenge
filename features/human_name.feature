@@ -10,6 +10,11 @@ Feature: Ability to add a suggested name to the generator
     And     The suggested name is present at least once in the generated names
 
   Scenario: User can add their own suggested name
-    When    I enter a name in the human name field
+    When    I enter "John Smith" in the human name field
     And     I submit the form
-    Then    The name I entered is present at least once in the generated names 
+    Then    "John Smith" is present at least once in the generated names
+
+  Scenario: A human name containing only numbers and special chars is not factored in to the generated names
+    When    I enter "234#$%@352434@" in the human name field
+    And     I submit the form
+    Then    None of the generated names contain integers or special chars
