@@ -3,7 +3,11 @@ Then(/^The number of names generated is equal to "(.*?)"$/) do |number|
 end
 
 When(/^I change the number of names generated to "(.*?)"$/) do |number|
-  fill_in('count', with: number)
+  if number == ''
+    fill_in('count', with: nil)
+  else
+    fill_in('count', with: number)
+  end   
 end
 
 Then('Returns a message saying maximum number is 100') do

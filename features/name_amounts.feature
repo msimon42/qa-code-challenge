@@ -23,3 +23,9 @@ Feature: Ability to adjust the amount of names generated
     And   I submit the form
     Then  Returns a message saying maximum number is 100
     And   The number of names generated is equal to "100"
+
+  Scenario: Name amounts field is left blank
+    When  I change the number of names generated to ""
+    And   I submit the form
+    Then  Returns a message saying minimum number is 10
+    And   The number of names generated is equal to "10"
