@@ -1,6 +1,7 @@
 Feature: Ability to adjust the amount of names generated
   Background:
     Given I am on the fantasy name page
+    And   I see the text "Find the Perfect Fantasy Name"
 
   Scenario: I do not alter the amount generated field
     And   I submit the form
