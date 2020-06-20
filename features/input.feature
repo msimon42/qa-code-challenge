@@ -4,7 +4,8 @@ Feature: Homepage Inputs
     And   I see the text "Find the Perfect Fantasy Name"
 
   Scenario: Fields for categories function properly
-    Given There are 23 categories and all are selected
+    Given There are 23 categories
+    And   All categories are selected
     And   I can deselect all categories
     And   I can select the category "Dragon"
 
@@ -14,7 +15,6 @@ Feature: Homepage Inputs
 
   Scenario: Gender of names defaults to female
     Given There is a dropdown menu for gender
-    And   Female is currently selected
 
   Scenario: Human name field defaults to blank
     Given There is a field where a user can enter a human name
@@ -23,5 +23,3 @@ Feature: Homepage Inputs
   Scenario: Random seed contains a number
     Given There is a field where a user can enter a seed for the generator
     And   The field already contains a random number
-
-  
