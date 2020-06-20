@@ -14,9 +14,9 @@ Then(/^I am now on a results page that is "(.*?)"$/) do |expectation|
   find('h1', text: 'Random Fantasy Names')
   case expectation
   when 'not empty'
-    check_for_name_element
+    assert_name_element
   else
-    check_for_no_name_element
+    assert_no_name_element
   end
 end
 
@@ -25,7 +25,7 @@ And(/^These results are "(.*?)"$/) do |categories|
   required_cats = categories.split(',')
 
   results.each do |result|
-    check_correct_category(result.text, required_cats)
+    assert_correct_category(result.text, required_cats)
   end
 end
 
@@ -43,19 +43,19 @@ When('I select all categories') do
 end
 
 #helper methods
-def check_for_name_element
+def assert_name_element
   unless has_css?('.name')
     raise 'No results'
   end
 end
 
-def check_for_no_name_element
+def assert_no_name_element
   unless has_no_css?('.name')
     raise 'Unexpected results'
   end
 end
 
-def check_correct_category(category, required_cats)
+def assert_correct_category(category, required_cats)
   unless required_cats.any?{ |cat| category.include?(cat)}
     raise 'Unexpected category'
   end
