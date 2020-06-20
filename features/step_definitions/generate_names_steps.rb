@@ -15,8 +15,10 @@ Then(/^I am now on a results page that is "(.*?)"$/) do |expectation|
   case expectation
   when 'not empty'
     assert_name_element
-  else
+  when 'empty'
     assert_no_name_element
+  else
+    raise 'Invalid argument'  
   end
 end
 
